@@ -5,9 +5,10 @@ WORKDIR /app
 
 RUN npm install -g pnpm@8.12.0
 RUN pnpm i
-RUN pnpm generate && npx next build
 
 ENV NODE_ENV=production
 ENV SECRET_KEY="secret"
+
+RUN pnpm generate && npx next build
 
 CMD npm run start
