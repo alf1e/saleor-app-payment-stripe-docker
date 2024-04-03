@@ -8,6 +8,6 @@ RUN pnpm i
 RUN pnpm generate && npx next build
 
 ENV NODE_ENV=production
-ENV secret="secret"
+ENV SECRET_KEY="secret"
 
 CMD npm run start
