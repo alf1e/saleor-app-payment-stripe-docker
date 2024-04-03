@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "canary"
+  workflow_dispatch:
 
 jobs:
   docker:
